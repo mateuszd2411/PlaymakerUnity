@@ -1,0 +1,33 @@
+[Directories]
+Animations=.\sceneassets\animations
+Archives=.\archives
+AutoBackup=.\autoback
+BitmapProxies=.\proxies
+Downloads=.\downloads
+Export=.\export
+Expressions=.\express
+Images=.\sceneassets\images
+Import=.\import
+Materials=.\materiallibraries
+MaxStart=.\scenes
+Photometric=.\sceneassets\photometric
+Previews=.\previews
+ProjectFolder=C:\Users\Ýlkin\Desktop\turbo\fbx
+RenderAssets=.\sceneassets\renderassets
+RenderOutput=.\renderoutput
+RenderPresets=.\renderpresets
+Scenes=.\scenes
+Sounds=.\sceneassets\sounds
+VideoPost=.\vpost
+[XReferenceDirs]
+Dir1=.\scenes
+[BitmapDirs]
+Dir1=C:\Program Files\Autodesk\3ds Max 2012\Maps
+Dir2=C:\Program Files\Autodesk\3ds Max 2012\Maps\glare
+Dir3=C:\Program Files\Autodesk\3ds Max 2012\Maps\adskMtl
+Dir4=C:\Program Files\Autodesk\3ds Max 2012\Maps\Noise
+Dir5=C:\Program Files\Autodesk\3ds Max 2012\Maps\Substance\noises
+Dir6=C:\Program Files\Autodesk\3ds Max 2012\Maps\Substance\textures
+Dir7=C:\Program Files\Autodesk\3ds Max 2012\Maps\fx
+Dir8=.\downloads
+Dir9=C:\Users\Ýlkin\Desktop\3ds max\v6\Yeni qovluq
