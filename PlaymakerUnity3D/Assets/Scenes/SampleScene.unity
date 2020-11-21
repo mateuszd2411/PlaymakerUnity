@@ -5949,7 +5949,9 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  m_Layer: 0
+  - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -6002,7 +6004,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -6021,6 +6023,83 @@ Transform:
   m_Father: {fileID: 443015551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 23.27, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 3e7cbb2d9ebf3814eb593248942effd7, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 534669905}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 1
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &538503776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7618,7 +7697,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625792041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: aiming target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21562,6 +21641,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ScaleTime
         customNames:
         - 
         - 
@@ -21569,10 +21649,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 000000000001
-        actionStartIndex: 00000000020000000400000006000000080000000a000000
-        actionHashCodes: 5ac852045ac852045ac852045ac852045ac85204b2cf1000
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 00000000000001
+        actionStartIndex: 00000000020000000400000006000000080000000a0000000f000000
+        actionHashCodes: 5ac852045ac852045ac852045ac852045ac85204b2cf10006cdd4504
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -22255,9 +22336,21 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.3
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -22276,12 +22369,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000000
+        byteData: 0000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 240000000100000024000000010000002400000001000000240000000100000024000000010000001400000011000000110000000100000001000000
+        paramDataType: 2400000001000000240000000100000024000000010000002400000001000000240000000100000014000000110000001100000001000000010000000f0000001100000001000000
         paramName:
         - targetProperty
         - everyFrame
@@ -22298,8 +22391,11 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 000000000000000001000000010000000200000002000000030000000300000004000000040000000000000000000000010000000500000006000000
-        paramByteDataSize: 000000000100000000000000010000000000000001000000000000000100000000000000010000000000000000000000000000000100000001000000
+        - timeScale
+        - adjustFixedDeltaTime
+        - everyFrame
+        paramDataPos: 000000000000000001000000010000000200000002000000030000000300000004000000040000000000000000000000010000000500000006000000000000000200000007000000
+        paramByteDataSize: 000000000100000000000000010000000000000001000000000000000100000000000000010000000000000000000000000000000100000001000000000000000000000001000000
     events:
     - name: Die
       isSystemEvent: 0
