@@ -6662,6 +6662,50 @@ Transform:
   m_Father: {fileID: 1130189116309177605}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &858106719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 858106720}
+  - component: {fileID: 858106721}
+  m_Layer: 0
+  m_Name: Punching box
+  m_TagString: Bullet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &858106720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858106719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1130189116309177675}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &858106721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858106719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23734999, y: 0.19706002, z: 0.25980628}
+  m_Center: {x: 0.07205656, y: -0.034915812, z: -0.008130697}
 --- !u!1 &996707903
 GameObject:
   m_ObjectHideFlags: 0
@@ -18286,6 +18330,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.GetButtonDown
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.GetButtonDown
         customNames:
@@ -18299,10 +18344,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101010101
-        actionIsOpen: 00000000000000000001
-        actionStartIndex: 00000000070000000c000000120000001b0000001e00000023000000260000002b00000030000000
-        actionHashCodes: b691f7036d528404f9cb7200f804e7041012c1005f9135041012c100b2cf10005f9135041012c100
+        - 
+        actionEnabled: 0101010101010101010101
+        actionIsOpen: 0100000000000001010001
+        actionStartIndex: 00000000070000000c000000120000001b0000001e00000023000000260000002b0000003000000035000000
+        actionHashCodes: b691f7036d528404f9cb7200f804e7041012c1005f9135041012c100b2cf1000b2cf10005f9135041012c100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -18344,6 +18390,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 858106719}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -18530,6 +18584,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -18564,12 +18630,12 @@ MonoBehaviour:
         - equip weapon
         - to run
         - Punch
-        byteData: 00000000010000000001010000000000000100000000
+        byteData: 000000000100000000010100000000000000000100000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 12000000120000000f00000007000000130000001c0000000f00000014000000120000000f000000100000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f000000010000001700000011000000120000001700000011000000140000001200000011000000010000000700000012000000170000001100000014000000110000001100000001000000010000001400000012000000110000000100000007000000120000001700000011000000
+        paramDataType: 12000000120000000f00000007000000130000001c0000000f00000014000000120000000f000000100000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001200000017000000110000001400000012000000110000000100000007000000120000001700000011000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000110000000100000007000000120000001700000011000000
         paramName:
         - horizontalAxis
         - verticalAxis
@@ -18615,6 +18681,11 @@ MonoBehaviour:
         - resetOnExit
         - everyFrame
         - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        - gameObject
         - parameter
         - Value
         - everyFrame
@@ -18622,8 +18693,8 @@ MonoBehaviour:
         - buttonName
         - sendEvent
         - storeResult
-        paramDataPos: 0000000001000000000000000000000000000000000000000100000000000000020000000200000000000000030000000100000003000000040000000500000004000000050000000200000001000000060000000200000000000000070000000900000000000000010000000400000001000000020000000300000005000000030000000a0000000b0000000600000002000000040000000400000005000000060000000f000000100000000500000007000000070000001100000012000000080000000300000008000000
-        paramByteDataSize: 000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000004000000000000000000000000000000
+        paramDataPos: 0000000001000000000000000000000000000000000000000100000000000000020000000200000000000000030000000100000003000000040000000500000004000000050000000200000001000000060000000200000000000000070000000900000000000000010000000400000001000000020000000300000005000000030000000a0000000b0000000600000002000000040000000400000005000000060000000f000000100000000500000007000000080000001100000012000000060000000700000009000000130000001400000008000000030000000a000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000004000000000000000000000000000000
     - name: Running
       description: 
       colorIndex: 0
@@ -18669,6 +18740,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SmoothLookAtDirection
         - HutongGames.PlayMaker.Actions.GetButtonDown
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.GetButtonDown
         customNames:
         - 
@@ -18678,10 +18750,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 00000000000001
-        actionStartIndex: 0000000005000000080000000f000000180000001b00000020000000
-        actionHashCodes: 5f9135041012c100b691f703f804e7041012c100b2cf10001012c100
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0000000000000101
+        actionStartIndex: 0000000005000000080000000f000000180000001b0000002000000025000000
+        actionHashCodes: 5f9135041012c100b691f703f804e7041012c100b2cf1000b2cf10001012c100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -18715,6 +18788,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 38340109}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 858106719}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -18831,6 +18912,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 1
           name: 
           tooltip: 
@@ -18865,12 +18958,12 @@ MonoBehaviour:
         - 
         - equip weapon
         - Punch
-        byteData: 010000000000000000010000
+        byteData: 0100000000000000000100000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000011000000010000000700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001200000017000000110000001400000011000000110000000100000001000000120000001700000011000000
+        paramDataType: 140000001200000011000000010000000700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000014000000110000001100000001000000010000001400000011000000110000000100000001000000120000001700000011000000
         paramName:
         - gameObject
         - parameter
@@ -18904,11 +18997,16 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
         - buttonName
         - sendEvent
         - storeResult
-        paramDataPos: 0000000000000000000000000000000001000000010000000000000001000000020000000300000000000000050000000000000000000000010000000100000001000000020000000200000002000000030000000900000001000000030000000400000002000000040000000200000005000000060000000a0000000b000000050000000300000007000000
-        paramByteDataSize: 0000000000000000000000000100000004000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000
+        paramDataPos: 0000000000000000000000000000000001000000010000000000000001000000020000000300000000000000050000000000000000000000010000000100000001000000020000000200000002000000030000000900000001000000030000000400000002000000040000000200000005000000060000000a0000000b0000000300000007000000080000000c0000000d000000050000000300000009000000
+        paramByteDataSize: 00000000000000000000000001000000040000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000001000000000000000000000000000000
     - name: Equip weapon
       description: 
       colorIndex: 0
@@ -21490,14 +21588,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorCrossFade
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 6d52840448c01101
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000050000000a000000
+        actionHashCodes: 6d528404b2cf100048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -21509,6 +21609,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 858106719}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -21552,7 +21660,19 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -21560,23 +21680,28 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - FINISHED
-        byteData: 00
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000f000000100000000f0000000f0000001700000001000000
+        paramDataType: 14000000120000000f000000100000000f00000014000000110000001100000001000000010000000f0000001700000001000000
         paramName:
         - gameObject
         - stateName
         - transitionDuration
         - layer
         - normalizedTime
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000000000000000000001000000020000000000000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000010000000100000000000000010000000000000001000000020000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -23675,6 +23800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130189116309177675}
+  - component: {fileID: 1130189116308756854}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -23849,10 +23975,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.20783217
-  m_Height: 1.0391608
+  m_Radius: 0.09641717
+  m_Height: 0.43299004
   m_Direction: 0
-  m_Center: {x: 0.5195804, y: 0, z: 0}
+  m_Center: {x: 0.21649462, y: 0.0000007553209, z: 0.02}
 --- !u!1 &1130189116308756851
 GameObject:
   m_ObjectHideFlags: 0
@@ -23899,6 +24025,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &1130189116308756854
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130189116308756843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.067845576
+  m_Height: 0.2109549
+  m_Direction: 0
+  m_Center: {x: 0.10547737, y: -0.028570771, z: 0.019999998}
 --- !u!1 &1130189116308756855
 GameObject:
   m_ObjectHideFlags: 0
@@ -24601,6 +24741,7 @@ Transform:
   - {fileID: 1130189116309177697}
   - {fileID: 1130189116309177705}
   - {fileID: 38340110}
+  - {fileID: 858106720}
   m_Father: {fileID: 1130189116309177677}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37989,7 +38130,7 @@ PrefabInstance:
     - target: {fileID: 4991800037027313748, guid: 78c029d9ce870d045b13ec94e87b000a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4991800037027406964, guid: 78c029d9ce870d045b13ec94e87b000a,
         type: 3}
