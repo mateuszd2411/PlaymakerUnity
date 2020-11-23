@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Bullet
+  - Wall climbing
   layers:
   - Default
   - TransparentFX
