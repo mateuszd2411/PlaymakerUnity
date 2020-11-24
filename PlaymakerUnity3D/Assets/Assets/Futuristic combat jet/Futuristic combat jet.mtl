@@ -1,0 +1,42 @@
+# Blender MTL File: 'Futuristic_combat_jet_One_Object_blend.blend'
+# Material Count: 3
+
+newmtl Material.003
+Ns 52.941176
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\Aircraft N.jpg
+map_Bump textures\\Aircraft N.jpg
+map_Ks textures\\Aircraft S.jpg
+refl textures\\REF 1.jpg
+
+newmtl a1.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\Aircraft N.jpg
+map_Bump textures\\Aircraft N.jpg
+map_Ks textures\\Aircraft S.jpg
+refl textures\\REF 1.jpg
+
+newmtl aircraft_Glas.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.003484 0.003484 0.003484
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.417702
+illum 1
+map_Kd textures\Aircraft N.jpg
+refl textures\\REF 1.jpg
