@@ -19878,7 +19878,7 @@ MonoBehaviour:
         x: 466
         y: 132
         width: 122
-        height: 80
+        height: 96
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -19915,6 +19915,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetGameObject
@@ -19930,6 +19938,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.GetButtonDown
         - HutongGames.PlayMaker.Actions.GetButtonDown
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
@@ -19944,10 +19953,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101010101010101
-        actionIsOpen: 01000000000000000000000001
-        actionStartIndex: 00000000030000000a0000000f000000150000001e0000002100000026000000290000002e00000033000000380000003b000000
-        actionHashCodes: 4d51cf04b691f7036d528404f9cb7200f804e7041012c1005f9135041012c100b2cf1000b2cf10005f9135041012c1001012c100
+        - 
+        actionEnabled: 0101010101010101010101010101
+        actionIsOpen: 0100000000000000000000000101
+        actionStartIndex: 00000000030000000a0000000f000000150000001e0000002100000026000000290000002e00000033000000380000003b0000003e000000
+        actionHashCodes: 4d51cf04b691f7036d528404f9cb7200f804e7041012c1005f9135041012c100b2cf1000b2cf10005f9135041012c1001012c100a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -20225,6 +20235,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -20254,12 +20270,14 @@ MonoBehaviour:
         - to run
         - Punch
         - test the wall
-        byteData: 00000000000100000000010100000000000000000100000000
+        - Swimming
+        - 
+        byteData: 0000000000010000000001010000000000000000010000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000000100000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f000000100000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001200000017000000110000001400000012000000110000000100000007000000120000001700000011000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000110000000100000007000000120000001700000011000000120000001700000011000000
+        paramDataType: 13000000130000000100000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f000000100000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f000000010000001700000011000000120000001700000011000000140000001200000011000000010000000700000012000000170000001100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001200000011000000010000000700000012000000170000001100000012000000170000001100000011000000170000001700000001000000
         paramName:
         - variable
         - gameObject
@@ -20323,8 +20341,12 @@ MonoBehaviour:
         - buttonName
         - sendEvent
         - storeResult
-        paramDataPos: 0000000001000000000000000000000001000000000000000100000002000000000000000100000000000000020000000200000000000000030000000100000003000000040000000500000005000000060000000200000001000000060000000200000000000000070000000a00000000000000010000000400000001000000020000000300000005000000030000000b0000000c00000006000000020000000400000004000000050000000600000010000000110000000500000007000000080000001200000013000000060000000700000009000000140000001500000008000000030000000a00000009000000040000000b000000
-        paramByteDataSize: 0000000000000000010000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000001000000000000000000000001000000000000000100000002000000000000000100000000000000020000000200000000000000030000000100000003000000040000000500000005000000060000000200000001000000060000000200000000000000070000000a00000000000000010000000400000001000000020000000300000005000000030000000b0000000c00000006000000020000000400000004000000050000000600000010000000110000000500000007000000080000001200000013000000060000000700000009000000140000001500000008000000030000000a00000009000000040000000b0000000c000000050000000600000019000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000001000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Running
       description: 
       colorIndex: 0
@@ -20333,7 +20355,7 @@ MonoBehaviour:
         x: 469
         y: 236
         width: 122
-        height: 96
+        height: 112
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -20378,6 +20400,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetGameObject
@@ -20393,6 +20423,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetButtonDown
         - HutongGames.PlayMaker.Actions.GetButtonDown
         - HutongGames.PlayMaker.Actions.GetButtonDown
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
@@ -20407,10 +20438,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101010101010101
-        actionIsOpen: 00010100000000000000000001
-        actionStartIndex: 000000000300000005000000070000000c0000000f000000160000001f00000022000000270000002c0000002f00000032000000
-        actionHashCodes: 4d51cf045ac852045ac852045f9135041012c100b691f703f804e7041012c100b2cf1000b2cf10001012c1001012c1001012c100
+        - 
+        actionEnabled: 0101010101010101010101010101
+        actionIsOpen: 0001010000000000000000000101
+        actionStartIndex: 000000000300000005000000070000000c0000000f000000160000001f00000022000000270000002c0000002f0000003200000035000000
+        actionHashCodes: 4d51cf045ac852045ac852045f9135041012c100b691f703f804e7041012c100b2cf1000b2cf10001012c1001012c1001012c100a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -20886,6 +20918,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -20916,12 +20954,14 @@ MonoBehaviour:
         - Punch
         - test the wall
         - Slide
-        byteData: 0000000100000000000000000100000000
+        - Swimming
+        - 
+        byteData: 000000010000000000000000010000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000000100000024000000010000002400000001000000140000001200000011000000010000000700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000014000000110000001100000001000000010000001400000011000000110000000100000001000000120000001700000011000000120000001700000011000000120000001700000011000000
+        paramDataType: 13000000130000000100000024000000010000002400000001000000140000001200000011000000010000000700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001200000017000000110000001400000011000000110000000100000001000000140000001100000011000000010000000100000012000000170000001100000012000000170000001100000012000000170000001100000011000000170000001700000001000000
         paramName:
         - variable
         - gameObject
@@ -20976,8 +21016,12 @@ MonoBehaviour:
         - buttonName
         - sendEvent
         - storeResult
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000000000000000000000000000300000004000000010000000000000001000000020000000300000000000000080000000200000000000000010000000100000001000000020000000200000002000000030000000c00000001000000030000000400000002000000040000000200000005000000060000000d0000000e0000000300000007000000080000000f0000001000000005000000030000000900000006000000040000000a00000007000000050000000b000000
-        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000000000000000000000000000300000004000000010000000000000001000000020000000300000000000000080000000200000000000000010000000100000001000000020000000200000002000000030000000c00000001000000030000000400000002000000040000000200000005000000060000000d0000000e0000000300000007000000080000000f0000001000000005000000030000000900000006000000040000000a00000007000000050000000b0000000c000000060000000700000011000000
+        paramByteDataSize: 000000000000000001000000000000000100000000000000010000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Equip weapon
       description: 
       colorIndex: 0
@@ -21097,7 +21141,7 @@ MonoBehaviour:
         x: 877
         y: 111.99219
         width: 116
-        height: 64
+        height: 80
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -21126,6 +21170,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -21140,6 +21192,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetMouseButtonDown
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
@@ -21153,10 +21206,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101010101
-        actionIsOpen: 000000000000000000000101
-        actionStartIndex: 00000000050000000c00000011000000140000001b000000210000002a0000002f000000320000003600000038000000
-        actionHashCodes: b2cf1000fa0e54026d5284041012c100b691f703f9cb7200f804e7045f9135041012c10034b46c045ac852045ac85204
+        - 
+        actionEnabled: 01010101010101010101010101
+        actionIsOpen: 00000000000000000000000001
+        actionStartIndex: 00000000050000000c00000011000000140000001b000000210000002a0000002f0000003200000036000000380000003a000000
+        actionHashCodes: b2cf1000fa0e54026d5284041012c100b691f703f9cb7200f804e7045f9135041012c10034b46c045ac852045ac85204a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -21660,6 +21714,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 0
@@ -21695,12 +21755,14 @@ MonoBehaviour:
         - 
         - to run
         - aim
-        byteData: 000000000000010000000001010000000001000000010000
+        - Swimming
+        - 
+        byteData: 00000000000001000000000101000000000100000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001100000011000000010000000100000014000000130000001c000000110000000f0000000f0000001700000014000000120000000f000000100000000f00000012000000170000001100000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000014000000120000001100000001000000070000001200000017000000110000000700000017000000110000000100000024000000010000002400000001000000
+        paramDataType: 140000001100000011000000010000000100000014000000130000001c000000110000000f0000000f0000001700000014000000120000000f000000100000000f00000012000000170000001100000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001400000012000000110000000100000007000000120000001700000011000000070000001700000011000000010000002400000001000000240000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - activate
@@ -21760,8 +21822,12 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000010000000000000000000000020000000000000001000000000000000200000000000000020000000000000003000000010000000100000003000000020000000300000004000000020000000100000001000000050000000300000004000000060000000700000006000000070000000400000002000000080000000300000004000000090000000b00000002000000050000000500000005000000060000000c0000000d0000000600000003000000070000001100000004000000080000001500000000000000160000000100000017000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000040000000000000000000000000000000400000000000000000000000100000000000000010000000000000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000001000000010000000000000000000000020000000000000001000000000000000200000000000000020000000000000003000000010000000100000003000000020000000300000004000000020000000100000001000000050000000300000004000000060000000700000006000000070000000400000002000000080000000300000004000000090000000b00000002000000050000000500000005000000060000000c0000000d000000060000000300000007000000110000000400000008000000150000000000000016000000010000001700000009000000050000000600000018000000
+        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000004000000000000000000000000000000040000000000000000000000010000000000000001000000000000000100000000000000000000000000000001000000
     - name: R_Run
       description: 
       colorIndex: 0
@@ -21770,7 +21836,7 @@ MonoBehaviour:
         x: 893.5
         y: 212
         width: 100
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -21791,6 +21857,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
@@ -21802,6 +21876,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetMouseButtonDown
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
@@ -21812,10 +21887,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000000101
-        actionStartIndex: 00000000050000000c0000000f000000160000001f00000024000000280000002a000000
-        actionHashCodes: 5f913504fa0e54021012c100b691f703f804e704b2cf100034b46c045ac852045ac85204
+        - 
+        actionEnabled: 01010101010101010101
+        actionIsOpen: 00000000000000000001
+        actionStartIndex: 00000000050000000c0000000f000000160000001f00000024000000280000002a0000002c000000
+        actionHashCodes: 5f913504fa0e54021012c100b691f703f804e704b2cf100034b46c045ac852045ac85204a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -22249,6 +22325,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 0
@@ -22283,12 +22365,14 @@ MonoBehaviour:
         - to idle
         - 
         - aim
-        byteData: 01000000000000000001000001000000010000
+        - Swimming
+        - 
+        byteData: 0100000000000000000100000100000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000011000000010000000700000014000000130000001c000000110000000f0000000f0000001700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000014000000110000001100000001000000010000000700000017000000110000000100000024000000010000002400000001000000
+        paramDataType: 140000001200000011000000010000000700000014000000130000001c000000110000000f0000000f0000001700000012000000170000001100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f0000000100000017000000110000001400000011000000110000000100000001000000070000001700000011000000010000002400000001000000240000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - parameter
@@ -22334,8 +22418,12 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000001000000000000000000000001000000000000000100000000000000010000000100000002000000020000000300000002000000050000000100000001000000030000000200000002000000040000000300000003000000050000000900000002000000040000000300000005000000060000000a0000000b0000000c00000003000000070000001000000000000000110000000100000012000000
-        paramByteDataSize: 0000000000000000000000000100000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000010000000400000000000000000000000100000000000000010000000000000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 000000000000000000000000000000000100000001000000000000000000000001000000000000000100000000000000010000000100000002000000020000000300000002000000050000000100000001000000030000000200000002000000040000000300000003000000050000000900000002000000040000000300000005000000060000000a0000000b0000000c0000000300000007000000100000000000000011000000010000001200000008000000040000000500000013000000
+        paramByteDataSize: 000000000000000000000000010000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000001000000040000000000000000000000010000000000000001000000000000000100000000000000000000000000000001000000
     - name: Aim
       description: 
       colorIndex: 0
@@ -23543,7 +23631,7 @@ MonoBehaviour:
         x: 281.46094
         y: 205.67188
         width: 100
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -23556,19 +23644,29 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorCrossFade
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: 6d528404b2cf100048c01101
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000050000000a0000000d000000
+        actionHashCodes: 6d528404b2cf100048c01101a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -23644,6 +23742,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -23651,12 +23755,14 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - FINISHED
-        byteData: 000000
+        - Swimming
+        - 
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000f000000100000000f00000014000000110000001100000001000000010000000f0000001700000001000000
+        paramDataType: 14000000120000000f000000100000000f00000014000000110000001100000001000000010000000f000000170000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - stateName
@@ -23671,8 +23777,12 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000010000000100000000000000010000000000000001000000020000000000000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000000000000000000000000000001000000010000000000000001000000000000000100000002000000000000000200000002000000010000000200000003000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000010000000100000000000000000000000100000000000000000000000000000001000000
     - name: test
       description: 
       colorIndex: 0
@@ -23988,7 +24098,7 @@ MonoBehaviour:
         x: 462
         y: 377
         width: 100
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -24001,21 +24111,31 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Swimming
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Swimming
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorCrossFade
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000005000000080000000a000000
-        actionHashCodes: 6d52840448c011015ac852045ac85204
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000005000000080000000a0000000c000000
+        actionHashCodes: 6d52840448c011015ac852045ac85204a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -24334,7 +24454,13 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -24342,12 +24468,14 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - FINISHED
-        byteData: 000000
+        - Swimming
+        - 
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000f000000100000000f0000000f000000170000000100000024000000010000002400000001000000
+        paramDataType: 14000000120000000f000000100000000f0000000f00000017000000010000002400000001000000240000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - stateName
@@ -24361,8 +24489,64 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000002000000000000000000000000000000010000000100000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000010000000000000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000000000000000000010000000200000000000000000000000000000001000000010000000200000000000000010000000200000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000000000001000000000000000100000000000000000000000000000001000000
+    - name: Swimming
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 767
+        y: 365
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -24371,6 +24555,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: Slide
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Swimming
       isSystemEvent: 0
       isGlobal: 0
     - name: aim
@@ -40824,13 +41011,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.TriggerEvent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 9c512400
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 27fbe1039c512400
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -40867,7 +41056,19 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -40875,20 +41076,23 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Swimming
-        byteData: 00000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000007000000120000001700000013000000
+        paramDataType: 1100000011000000010000001400000007000000120000001700000013000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
         - gameObject
         - trigger
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 0000000000000000000000000000000000000000
-        paramByteDataSize: 0000000004000000000000000000000000000000
+        paramDataPos: 0000000001000000000000000000000001000000000000000000000000000000
+        paramByteDataSize: 0000000000000000010000000000000004000000000000000000000000000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -40897,51 +41101,107 @@ MonoBehaviour:
         x: 302
         y: 117
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.TriggerEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 27fbe1039c512400
         unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Water_detector
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Start_swimming
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
+        stringParams:
+        - FINISHED
+        byteData: 0002000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 1100000011000000010000001400000007000000120000001700000013000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000001000000000000000000000001000000000000000000000000000000
+        paramByteDataSize: 0000000000000000010000000000000004000000000000000000000000000000
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
     - name: Swimming
       isSystemEvent: 0
       isGlobal: 0
