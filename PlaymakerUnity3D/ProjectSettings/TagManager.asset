@@ -7,6 +7,9 @@ TagManager:
   - NPC
   - Bullet
   - Wall climbing
+  - Fire
+  - Enemmy
+  - Water_detector
   layers:
   - Default
   - TransparentFX
