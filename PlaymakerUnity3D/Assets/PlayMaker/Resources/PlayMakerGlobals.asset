@@ -55,4 +55,5 @@ MonoBehaviour:
     categories:
     - 
     variableCategoryIDs: 00000000000000000000000000000000
-  events: []
+  events:
+  - Switched
