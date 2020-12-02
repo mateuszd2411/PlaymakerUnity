@@ -142,7 +142,27 @@ ModelImporter:
     7400000: Idle Shepard
     9500000: //RootNode
     13700000: ely_vanguardsoldier_kerwinatienza_Mesh
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ely-vanguardsoldier-kerwinatienza_diffuse
+    second: {fileID: 2800000, guid: f28e43ab7f76ced4b930cc7574e07629, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ely-vanguardsoldier-kerwinatienza_glow
+    second: {fileID: 2800000, guid: 28e0c13c2038269419ee3bd052e943e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ely-vanguardsoldier-kerwinatienza_normal
+    second: {fileID: 2800000, guid: b726b3e3f1b7d224c8a9b3d90e71a992, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ely-vanguardsoldier-kerwinatienza_specular
+    second: {fileID: 2800000, guid: c989399ff785c4f4b86461026fc114aa, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

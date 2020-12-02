@@ -392,7 +392,12 @@ ModelImporter:
     4300150: M4_carbine:desmont:magpul20rnd
     4300152: M4_carbine:desmont:verticalgrip
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1SG
+    second: {fileID: 2100000, guid: 80975ec2531743b4a921e9175b7b4a40, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
