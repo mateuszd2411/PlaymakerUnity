@@ -16,6 +16,7 @@ TagManager:
   - M4A1
   - MP5K
   - 1911
+  - $10
   layers:
   - Default
   - TransparentFX
