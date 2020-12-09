@@ -1,0 +1,26 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 21.03.2016 22:55:56
+
+newmtl Material__2457
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka C:\Users\vados\Desktop\3D models\The Expendables 2 Videogame\Architecture\Private house\p3dm.ru_0002_2.dds
+	map_Kd C:\Users\vados\Desktop\3D models\The Expendables 2 Videogame\Architecture\Private house\p3dm.ru_0002_2.dds
+
+newmtl wire_113135006
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.443137 0.529412 0.023529
+	Kd 0.443137 0.529412 0.023529
+	Ks 0.350000 0.350000 0.350000
