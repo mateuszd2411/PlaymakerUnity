@@ -8,6 +8,7 @@ using System.Linq;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
+	[SerializeField] TMP_InputField roomNameInputField;
 
 	void Start()
 	{
@@ -27,7 +28,22 @@ public class Launcher : MonoBehaviourPunCallbacks
 		Debug.Log("Joined Lobby");
 	}
 
-    private void Update()
+    public void CreateRoom()
+    {
+		 if(string.IsNullOrEmpty(roomNameInputField.text))
+        {
+			return;
+        }
+		PhotonNetwork.CreateRoom(roomNameInputField.text);
+		MenuManager.Instance.OpenMenu("loading");
+    }
+
+    public override void OnJoinedRoom()
+    {
+        
+    }
+
+    public override void OnCreateRoomFailed(short returnCode, string message)
     {
         
     }
