@@ -9,6 +9,7 @@ using System.Linq;
 public class Launcher : MonoBehaviourPunCallbacks
 {
 	[SerializeField] TMP_InputField roomNameInputField;
+	[SerializeField] TMP_Text errorText;
 
 	void Start()
 	{
@@ -40,11 +41,12 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        
+		MenuManager.Instance.OpenMenu("room");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        
-    }
+		errorText.text = "Room Creation Failed: " + message;
+		MenuManager.Instance.OpenMenu("error");
+	}
 }
