@@ -35,6 +35,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 	{
 		Debug.Log("Connected to Master");
 		PhotonNetwork.JoinLobby();
+		PhotonNetwork.AutomaticallySyncScene = true;
 	}
 
 	public override void OnJoinedLobby()
@@ -71,6 +72,11 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
 		errorText.text = "Room Creation Failed: " + message;
 		MenuManager.Instance.OpenMenu("error");
+	}
+
+	public void StartGame()
+	{
+		PhotonNetwork.LoadLevel(1); //build setting scene number (start00)
 	}
 
 	public void LeaveRoom()
