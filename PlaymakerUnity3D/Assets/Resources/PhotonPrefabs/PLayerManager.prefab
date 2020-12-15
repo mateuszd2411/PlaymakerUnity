@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6163901673951629629}
   - component: {fileID: 6163901673951629630}
+  - component: {fileID: 6337774216843774401}
   m_Layer: 0
   m_Name: PLayerManager
   m_TagString: Untagged
@@ -53,3 +54,15 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &6337774216843774401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163901673951629631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2cc6c9471b3ef488aac9119aad9d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
