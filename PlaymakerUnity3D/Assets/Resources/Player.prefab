@@ -760,7 +760,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101010101
-        actionIsOpen: 0000010000010001
+        actionIsOpen: 0000000101010101
         actionStartIndex: 00000000070000000c000000130000001b00000020000000270000002f000000
         actionHashCodes: 5552ad05bf9f37029ee915056ab44904bf9f37029ee91505f6e5be03979e4104
         unityObjectParams: []
@@ -1340,7 +1340,7 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
-        name: Position Sync
+        name: 
         tooltip: 
         showInInspector: 0
         networkSync: 1
@@ -1356,6 +1356,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 1
         value: {x: 0, y: 0, z: 0}
+      - useVariable: 1
+        name: Position Sync
+        tooltip: 
+        showInInspector: 0
+        networkSync: 1
+        value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -1367,7 +1373,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
