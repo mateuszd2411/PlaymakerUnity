@@ -1,57 +1,5 @@
 #PlayMaker Utils Change log
 
-###1.6.2
-**Release Date:** 04/10/2019  
-
-
-**fixed**: fixed playmaker 1.9 support for enums ( used in `GetEventProperties` for example)
-
-
-###1.6.1
-**Release Date:** 04/10/2019  
-
-**New**: New method `SendEventToGameObjectFsmByName(...)` to send an event to a specific fsm by name
-
-**fixed**: fixed Enum Creator Wizard editing refresh and ordered of enum list.
-
-###1.6.0
-**Release Date:** 26/07/2019  
-
-**New**: New method `PlayMakerEditorUtils.CreateGlobalEventsIfNeeded(...)` to create global asset, stored in PlayMaker Globals asset
-
-###1.5.9
-**Release Date:** 05/04/2019  
-
-**Update**: switched from LGPL to MIT license
-
-###1.5.8
-**Release Date:** 17/01/2019  
-
-**fixed**: Updated Enum Creator Wizard to work on Unity 2018
-
-###1.5.7
-**Release Date:** 18/12/2018  
-
-**fixed**: Removed Obsolete EventType.mouseDown api usage
-
-
-###1.5.6
-**Release Date:** 18/09/2018  
-
-**fixed**: Brought back `GetFsmOnGameObject` method to compliment `FindFsmOnGameObject` and return an Fsm instead of PlayMakerFSM object, this is to ease updates of old projects.
-
-###1.5.5
-**Release Date:** 30/08/2018  
-
-**new**: `PlayMakerUtils.LogFullPathToAction(FsmStateAction)`  
-**new**: `PlayMakerUtils.LogFullPathToAction.GetGameObjectPath(GameObject)`  
-
-
-###1.5.4
-**Release Date:** 20/07/2018  
-
-**new**: VersionInfo class to help finding out addons versions and misc
-
 ###1.5.3
 **Release Date:** 18/07/2018  
 

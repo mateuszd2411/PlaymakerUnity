@@ -33,7 +33,7 @@ public partial class PlayMakerUtils {
 		
 		if (eventData!=null)
 		{
-		    Fsm.EventData = eventData;
+			HutongGames.PlayMaker.Fsm.EventData = eventData;
 		}
 		
 		if (fromFsm == null)
@@ -93,17 +93,6 @@ public partial class PlayMakerUtils {
 
 	}
 
-	public static void SendEventToGameObjectFsmByName(PlayMakerFSM fromFsm, GameObject target,string fsmName, string fsmEvent, FsmEventData eventData)
-	{
-		FsmEventTarget _target = new FsmEventTarget();
-		_target.target = FsmEventTarget.EventTarget.GameObjectFSM;
-		_target.gameObject = new FsmOwnerDefault();
-		_target.gameObject.OwnerOption = OwnerDefaultOption.SpecifyGameObject;
-		_target.gameObject.GameObject = target;
-		_target.fsmName = fsmName;
-
-		SendEventToTarget(fromFsm, _target, fsmEvent, eventData);
-	}
 	
 	public static bool DoesTargetImplementsEvent(FsmEventTarget target,string eventName)
 	{
@@ -239,16 +228,13 @@ public partial class PlayMakerUtils {
         {
             if (_event == null)
             {
-                _event = new FsmEvent(globalEventName) { IsGlobal = true };
+                _event = new FsmEvent(globalEventName);
                 FsmEvent.AddFsmEvent(_event);
-                if (!FsmEvent.globalEvents.Contains(globalEventName))
-                {
-                    FsmEvent.globalEvents.Add(globalEventName);
-                }
             }
 
             result = true;
 
+            _event.IsGlobal = true;
         }
 
         return result;

@@ -3,7 +3,6 @@
 
 using System;
 using System.Collections;
-using HutongGames.PlayMaker;
 
 public static class PlayMakerUtils_Extensions
 {
@@ -95,15 +94,6 @@ public static class PlayMakerUtils_Extensions
 
 	public static string GetPath(this UnityEngine.Component component) {
 		return component.transform.GetPath();
-	}
-
-	#endregion
-	
-	#region FsmStateAction
-	
-	public static string GetActionPath(this FsmStateAction action) {
-		
-		return action.Fsm.GameObject.transform.GetPath()+ "/"+action.Fsm.Name+":"+action.State.Name+":"+action.Name;
 	}
 
 	#endregion

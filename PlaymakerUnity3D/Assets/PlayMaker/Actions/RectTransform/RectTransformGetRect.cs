@@ -1,12 +1,20 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
- 
+/*--- __ECO__ __ACTION__
+EcoMetaStart
+{
+"script dependancies":[
+						"Assets/PlayMaker Custom Actions/__internal/FsmStateActionAdvanced.cs"
+					]
+}
+EcoMetaEnd
+---*/
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory("RectTransform")]
 	[Tooltip("The calculated rectangle in the local space of the Transform.")]
-	public class RectTransformGetRect : BaseUpdateAction
+	public class RectTransformGetRect : FsmStateActionAdvanced
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(RectTransform))]

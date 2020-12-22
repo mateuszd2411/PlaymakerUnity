@@ -1,12 +1,20 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
- 
+/*--- __ECO__ __ACTION__
+EcoMetaStart
+{
+"script dependancies":[
+						"Assets/PlayMaker Custom Actions/__internal/FsmStateActionAdvanced.cs"
+					]
+}
+EcoMetaEnd
+---*/
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory("RectTransform")]
 	[Tooltip("Get the size of this RectTransform relative to the distances between the anchors. this is the 'Width' and 'Height' values in the RectTransform inspector.")]
-	public class RectTransformGetSizeDelta : BaseUpdateAction
+	public class RectTransformGetSizeDelta : FsmStateActionAdvanced
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(RectTransform))]
