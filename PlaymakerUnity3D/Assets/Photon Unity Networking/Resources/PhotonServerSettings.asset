@@ -17,7 +17,7 @@ MonoBehaviour:
   ChatAppID: c9c1c2f3-9009-4a72-96ed-72ceaf2ae20c
   HostType: 4
   PreferredRegion: 0
-  EnabledRegions: -1
+  EnabledRegions: 1
   Protocol: 0
   ServerAddress: 
   ServerPort: 5055
