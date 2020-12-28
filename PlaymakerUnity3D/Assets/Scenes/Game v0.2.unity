@@ -3936,6 +3936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6194330254776760086}
+  - component: {fileID: 6194330254776724279}
   m_Layer: 0
   m_Name: Gta 3 - Claude
   m_TagString: Untagged
@@ -3943,6 +3944,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &6194330254776724279
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6194330254776724278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b9cd26eec9651ee43a0d51d862eb8705, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1b655c84c7279fe40a0c4b1ac06c4fd4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &6194330254776760084
 Transform:
   m_ObjectHideFlags: 0
