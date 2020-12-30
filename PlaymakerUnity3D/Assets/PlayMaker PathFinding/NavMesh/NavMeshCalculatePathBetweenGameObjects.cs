@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 // TODO: implement FsmNavMeshPath properly.
 using UnityEngine;
 
@@ -24,12 +24,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[ActionSection("Result")]
 		
-
-		[UIHint(UIHint.Variable)]
-		[ArrayEditor(VariableType.Vector3)]
-		[Tooltip("Store the calculated path corners")]
-		public FsmArray calculatedPathCorners;
-
+		
+		[RequiredField]
 		[Tooltip("The Fsm NavMeshPath proxy component to hold the resulting path")]
 		[UIHint(UIHint.Variable)]
 		[CheckForComponent(typeof(FsmNavMeshPath))]
@@ -63,13 +59,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void Reset()
 		{
-
-			calculatedPath = new FsmOwnerDefault();
-			calculatedPath.OwnerOption = OwnerDefaultOption.SpecifyGameObject;
-			calculatedPath.GameObject = new FsmGameObject () { UseVariable=true };
-
-			calculatedPathCorners = null;
-
+			calculatedPath = null;
+			
 			passableMask = -1; // so that by default mask is "everything"
 			sourceGameObject = null;
 			targetGameObject = null;
@@ -98,28 +89,19 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				return;
 			}
-
+			
+			
 			_getNavMeshPathProxy();
+			if (_NavMeshPathProxy ==null)
+			{
+				return;
+			}
 			
 			UnityEngine.AI.NavMeshPath _path = new UnityEngine.AI.NavMeshPath();
 			
 			bool _found = UnityEngine.AI.NavMesh.CalculatePath(_sourceGameObject.transform.position,_targetGameObject.transform.position,passableMask.Value,_path);
 			
-			if (_NavMeshPathProxy !=null)
-			{
-				_NavMeshPathProxy.path = _path;
-			}
-
-			if (!calculatedPathCorners.IsNone)
-			{
-				calculatedPathCorners.Resize (_path.corners.Length);
-				for (int i = 0; i < calculatedPathCorners.Length; i++)
-				{
-					calculatedPathCorners.Set (i, _path.corners [i]);
-				}
-
-				calculatedPathCorners.SaveChanges();
-			}
+			_NavMeshPathProxy.path = _path;
 			
 			resultingPathFound.Value = _found;
 			

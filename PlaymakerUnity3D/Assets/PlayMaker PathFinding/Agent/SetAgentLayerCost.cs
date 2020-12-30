@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 
 using UnityEngine;
 
@@ -8,18 +8,18 @@ namespace HutongGames.PlayMaker.Actions
 	[Tooltip("Sets the cost for traversing over geometry of the layer type. \n " +
 		"Cost should be between 1 and infinite. A cost of 3 means that walking 1 meter feels as walking 3 meter when cost is 1. So a higher value means 'more expensive'." +
 		 "\nNOTE: The Game Object must have a NavMeshAgent component attached.")]
-	public class SetAgentLayerCost : FsmStateAction
+	public class AgentSetLayerCost : FsmStateAction
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
 		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
 		
-		[Tooltip("The Area index.")]
-		public FsmInt area;
-		
-		[Tooltip("OR the Area name.")]
-		public FsmString orAreaName;
+		[Tooltip("The layer index.")]
+		public FsmInt layer;
+
+		[Tooltip("OR The layer name.")]
+		public FsmString ORlayerName;
 
 		[Tooltip("The Layer Cost. A cost of 3 means that walking 1 meter feels as walking 3 meter when cost is 1")]
 		public FsmFloat cost;
@@ -40,8 +40,8 @@ namespace HutongGames.PlayMaker.Actions
 		public override void Reset()
 		{
 			gameObject = null;
-			area = null;
-			orAreaName = new FsmString(){UseVariable=true};
+			layer = null;
+			ORlayerName = null;
 			cost = null;
 		}
 
@@ -61,31 +61,33 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			int areaId = area.Value;
-			if (orAreaName.Value!=""){
-				areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
+			int layerId = layer.Value;
+			if (ORlayerName.Value!=""){
+				layerId = UnityEngine.AI.NavMesh.GetNavMeshLayerFromName(ORlayerName.Value);
 			}
 			
-			_agent.SetAreaCost(areaId,cost.Value);
+			_agent.SetLayerCost(layerId,cost.Value);
 			
 		}
-
+		
 		public override string ErrorCheck()
 		{
-			if (orAreaName.Value!="")
+			
+			if (ORlayerName.Value!="")
 			{
-				int areaId = UnityEngine.AI.NavMesh.GetAreaFromName(orAreaName.Value);
-				if (areaId==-1){
-					return "Layer Name '"+orAreaName.Value+"' doesn't exists";
-				}else if(area.Value != 0){
-					if (areaId == area.Value){
-						return "Area reference redundancy. Use 'Area' OR 'Area Name', not both at the same time..";
+				int layerID = UnityEngine.AI.NavMesh.GetNavMeshLayerFromName(ORlayerName.Value);
+				if (layerID==-1){
+					return "Layer Name '"+ORlayerName.Value+"' doesn't exists";
+				}else if(layer.Value != 0){
+					if (layerID == layer.Value){
+						return "Layer reference redundancy. Use Layer OR Layer Name.";
 					}else{
-						return "Area conflict, area name '"+orAreaName.Value+"' will be used";
+						return "Layer conflict, layer name '"+ORlayerName.Value+"' will be used";
 					}
 					
 				}
 			}
+			
 			
 			return "";
 		}

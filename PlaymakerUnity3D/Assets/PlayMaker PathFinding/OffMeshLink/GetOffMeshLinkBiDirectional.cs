@@ -1,6 +1,7 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 
-
+/* UNSUPPORTED BY THE CURRENT UNITY VERSION, but possibly in future update.
+ 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
@@ -12,18 +13,17 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have an OffMeshLink component attached.")]
-		[CheckForComponent(typeof(UnityEngine.AI.OffMeshLink))]
+		[CheckForComponent(typeof(OffMeshLink))]
 		public FsmOwnerDefault gameObject;
 		
 		[RequiredField]
 		[Tooltip("Store flag of the offLinkMesh bi directional state")]
 		[UIHint(UIHint.Variable)]
 		public FsmBool storeResult;
-
-		[Tooltip("Repeat every frame.")]
+		
 		public bool everyFrame;
 		
-		private UnityEngine.AI.OffMeshLink _offMeshLink;
+		private OffMeshLink _offMeshLink;
 
 		private void _getOffMeshLink()
 		{
@@ -33,7 +33,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_offMeshLink =  go.GetComponent<UnityEngine.AI.OffMeshLink>();
+			_offMeshLink =  go.GetComponent<OffMeshLink>();
 			
 		}
 		
@@ -73,3 +73,4 @@ namespace HutongGames.PlayMaker.Actions
 
 	}
 }
+*/

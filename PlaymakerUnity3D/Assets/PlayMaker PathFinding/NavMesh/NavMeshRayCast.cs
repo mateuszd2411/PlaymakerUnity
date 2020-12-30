@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 
 
 
@@ -23,7 +23,6 @@ namespace HutongGames.PlayMaker.Actions
 		[RequiredField]
 		[Tooltip("The mask specifying which NavMesh layers can be passed when tracing the ray.")]
 		public FsmInt passableMask;
-
 		
 		[ActionSection("Result")]
 		

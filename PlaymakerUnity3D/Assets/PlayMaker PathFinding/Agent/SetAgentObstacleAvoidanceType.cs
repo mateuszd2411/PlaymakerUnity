@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 //
 // TODO: ERROR CHECK to warn the user if he has set too many of the available options
 
@@ -79,7 +79,7 @@ namespace HutongGames.PlayMaker.Actions
 						oat = UnityEngine.AI.ObstacleAvoidanceType.LowQualityObstacleAvoidance;
 						break;	
 					case 2:
-						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;;
 						break;
 					case 3:
 						oat = UnityEngine.AI.ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
@@ -99,7 +99,7 @@ namespace HutongGames.PlayMaker.Actions
 						oat = UnityEngine.AI.ObstacleAvoidanceType.LowQualityObstacleAvoidance;
 						break;	
 					case "medium":
-						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;
+						oat = UnityEngine.AI.ObstacleAvoidanceType.MedQualityObstacleAvoidance;;
 						break;
 					case "good":
 						oat = UnityEngine.AI.ObstacleAvoidanceType.GoodQualityObstacleAvoidance;

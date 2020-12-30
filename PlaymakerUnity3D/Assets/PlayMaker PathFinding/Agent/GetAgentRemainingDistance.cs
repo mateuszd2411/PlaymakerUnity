@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 
 using UnityEngine;
 
@@ -20,8 +20,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("When remaining distance is 0, sends event.")]
 		public FsmEvent arrivedEvent;
-
-		[Tooltip("Repeat every frame.")]
+		
 		public bool everyFrame;
 		
 		private UnityEngine.AI.NavMeshAgent _agent;

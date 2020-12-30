@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
 
 using UnityEngine;
 
@@ -17,8 +17,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The next position on the current path of the navMesh Agent.")]
 		[UIHint(UIHint.Variable)]
 		public FsmVector3 nextPosition;
-
-		[Tooltip("Repeat every frame.")]
+		
 		public bool everyFrame;
 		
 		private UnityEngine.AI.NavMeshAgent _agent;
