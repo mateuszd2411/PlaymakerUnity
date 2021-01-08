@@ -166,7 +166,7 @@ Transform:
   m_Children:
   - {fileID: 30948857}
   m_Father: {fileID: 447114382}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &31207845
 GameObject:
@@ -370,7 +370,7 @@ Transform:
   m_Children:
   - {fileID: 99055734}
   m_Father: {fileID: 447114382}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &99055734
 Transform:
@@ -533,7 +533,7 @@ Transform:
   m_Children:
   - {fileID: 439128153}
   m_Father: {fileID: 447114382}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &439128153
 Transform:
@@ -603,6 +603,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1124168669}
   - {fileID: 31063357}
   - {fileID: 1603086325}
   - {fileID: 1950063819}
@@ -1054,8 +1055,8 @@ GameObject:
   - component: {fileID: 1124168671}
   - component: {fileID: 1124168670}
   m_Layer: 0
-  m_Name: a00BlockTile (1)
-  m_TagString: Untagged
+  m_Name: Vault_Obj
+  m_TagString: Vault_Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1067,12 +1068,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124168668}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.454, y: -0.561, z: 4.393}
-  m_LocalScale: {x: 1, y: 0.50449, z: 0.52352}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -5.7160015, y: 0.583, z: -2.062001}
+  m_LocalScale: {x: 2, y: 1.00898, z: 1.6098248}
   m_Children: []
-  m_Father: {fileID: 1603086325}
-  m_RootOrder: 1
+  m_Father: {fileID: 447114382}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1124168670
 MeshCollider:
@@ -1133,6 +1134,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124168668}
   m_Mesh: {fileID: 4300000, guid: 837f1b8ff169dc840b18862d7fe9350e, type: 2}
+--- !u!1 &1554067799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554067800}
+  m_Layer: 0
+  m_Name: Ground_detector
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554067800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554067799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.00382, z: 0.00576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7555543610900423194}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1596279595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,9 +1225,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1603134365}
-  - {fileID: 1124168669}
   m_Father: {fileID: 447114382}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1603134365
 Transform:
@@ -1459,7 +1489,7 @@ Transform:
   m_Children:
   - {fileID: 1950055295}
   m_Father: {fileID: 447114382}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950206269
 GameObject:
@@ -4773,6 +4803,7 @@ Transform:
   - {fileID: 7555543610900423262}
   - {fileID: 682839863}
   - {fileID: 677288825}
+  - {fileID: 1554067800}
   m_Father: {fileID: 1917446522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90000000}
@@ -5889,8 +5920,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 66
-        y: 383
+        x: 78
+        y: 392
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5989,25 +6020,41 @@ MonoBehaviour:
         serializedVersion: 2
         x: 51
         y: 217
-        width: 100
-        height: 16
+        width: 103
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: Check_Obj
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Walk
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Idle+Walk
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.Raycast
+        - HutongGames.PlayMaker.Actions.Raycast2
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: d3bd7b05
+        actionHashCodes: 46acbf02
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: 
+          name: Hit_Obj
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -6020,7 +6067,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 677288824}
+            value: {fileID: 1554067799}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -6038,7 +6085,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.8
+          value: 1
         - useVariable: 1
           name: 
           tooltip: 
@@ -6084,7 +6131,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 1}
+          value: {x: 0, y: 0, z: 2}
         - useVariable: 1
           name: 
           tooltip: 
@@ -6103,18 +6150,19 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {r: 1, g: 0.015686274, b: 0.1863371, a: 1}
+          value: {r: 1, g: 0.015686274, b: 0.12022249, a: 1}
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
+        - Check_Obj
+        - Walk
         byteData: 01000000
         arrayParamSizes: 00000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c000000110000001900000011000000
+        paramDataType: 140000001c0000001c000000070000000f000000170000001700000011000000130000001c0000001c0000000f000000100000000c000000110000001900000011000000
         paramName:
         - fromGameObject
         - fromPosition
@@ -6122,6 +6170,7 @@ MonoBehaviour:
         - space
         - distance
         - hitEvent
+        - noHitEvent
         - storeDidHit
         - storeHitObject
         - storeHitPoint
@@ -6132,11 +6181,110 @@ MonoBehaviour:
         - invertMask
         - debugColor
         - debug
-        paramDataPos: 00000000000000000100000000000000000000000000000000000000000000000200000003000000010000000000000000000000010000000000000002000000
-        paramByteDataSize: 00000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 0000000000000000010000000000000000000000000000000100000000000000000000000200000003000000010000000000000000000000010000000000000002000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 94
+        y: 294
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Vault
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 3
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Walk
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Idle+Walk
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectCompareTag
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 7b312602
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Hit_Obj
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vault_Obj
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Vault
+        - Walk
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 130000001200000017000000170000001100000001000000
+        paramName:
+        - gameObject
+        - tag
+        - trueEvent
+        - falseEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
+      isGlobal: 0
+    - name: Check_Obj
+      isSystemEvent: 0
       isGlobal: 0
     - name: Run
       isSystemEvent: 0
@@ -6170,7 +6318,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Hit_Obj
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -6178,7 +6332,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

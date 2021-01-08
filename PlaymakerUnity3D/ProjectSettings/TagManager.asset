@@ -17,6 +17,9 @@ TagManager:
   - MP5K
   - 1911
   - $10
+  - Enemy
+  - ActivateTrigger
+  - Vault_Obj
   layers:
   - Default
   - TransparentFX
