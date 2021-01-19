@@ -104,3 +104,4 @@ MonoBehaviour:
   - 'PHOTON / STATE : DISCONNECTING'
   - 'PHOTON / STATE : INITIALIZING APPLICATION'
   - No ammo
+  - reloaded
