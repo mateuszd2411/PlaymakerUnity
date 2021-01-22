@@ -7098,7 +7098,7 @@ GameObject:
   - component: {fileID: 1246937266564502887}
   - component: {fileID: 1246937266564502889}
   m_Layer: 0
-  m_Name: Zombie Frank
+  m_Name: Zombie
   m_TagString: Body
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7548,6 +7548,9 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: Die
+      isSystemEvent: 0
+      isGlobal: 1
     - name: damage
       isSystemEvent: 0
       isGlobal: 1
@@ -7560,6 +7563,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 4
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Die
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 3
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -21534,7 +21545,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Hit_obj
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -21885,13 +21896,13 @@ MonoBehaviour:
         - useVariable: 1
           name: Hit_obj
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
           name: Hit_obj
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -22039,25 +22050,97 @@ MonoBehaviour:
         x: 669
         y: 265
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 3
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetRoot
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101000001
+        actionStartIndex: 0000000002000000060000000b0000000f000000
+        actionHashCodes: d97b72025e69bb04b2cf10002a6e8a0088611604
         unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Zombie
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Hit_obj
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 6268648916841664132}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: Hit_obj
+              tooltip: 
+              showInInspector: 1
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: Damage
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
@@ -22065,24 +22148,72 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Ammonation
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -1
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
+        stringParams:
+        - Die
+        - FINISHED
+        byteData: 0000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 14000000130000001f000000170000000f0000000100000014000000110000001100000001000000010000000f0000000f000000010000000100000017000000
+        paramName:
+        - gameObject
+        - storeRoot
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - sendEvent
+        paramDataPos: 00000000000000000000000000000000000000000000000001000000000000000100000001000000020000000100000002000000030000000400000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000
     - name: State 6
       description: 
       colorIndex: 0
@@ -22094,7 +22225,7 @@ MonoBehaviour:
         height: 32
       isBreakpoint: 0
       isSequence: 0
-      hideUnused: 0
+      hideUnused: 1
       transitions:
       - fsmEvent:
           name: FINISHED
@@ -22148,7 +22279,7 @@ MonoBehaviour:
               useVariable: 1
               name: Hit_obj
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
               value: {fileID: 0}
           fsmName:
@@ -22332,6 +22463,9 @@ MonoBehaviour:
     - name: Damage
       isSystemEvent: 0
       isGlobal: 0
+    - name: Die
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Fire
       isSystemEvent: 0
       isGlobal: 0
@@ -22378,6 +22512,12 @@ MonoBehaviour:
       - useVariable: 1
         name: Hit_obj
         tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: Zombie
+        tooltip: 
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
@@ -22388,7 +22528,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
