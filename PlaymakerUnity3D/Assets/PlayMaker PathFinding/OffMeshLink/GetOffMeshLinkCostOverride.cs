@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 
@@ -18,7 +18,8 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Store the offLinkMesh cost override")]
 		[UIHint(UIHint.Variable)]
 		public FsmFloat storeResult;
-		
+
+		[Tooltip("Runs every frame.")]
 		public bool everyFrame;
 		
 		private UnityEngine.AI.OffMeshLink _offMeshLink;

@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 
@@ -17,7 +17,8 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("the relative vertical displacement of the owning GameObject")]
 		[UIHint(UIHint.Variable)]
 		public FsmFloat baseOffset;
-		
+
+		[Tooltip("Repeat every frame.")]
 		public bool everyFrame;
 		
 		private UnityEngine.AI.NavMeshAgent _agent;

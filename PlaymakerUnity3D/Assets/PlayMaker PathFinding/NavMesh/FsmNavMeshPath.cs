@@ -1,9 +1,8 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
-// TODO: implement FsmNavMeshPath properly in NavMeshCalculatePath and NaMeshCalculatePathBetweenGameObject.
-// this is currently very much under progress, not sure if this is the right way to go about this. maybe too advanced and should be left to user to implement this?
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class FsmNavMeshPath : MonoBehaviour {
 	
@@ -21,19 +20,30 @@ public class FsmNavMeshPath : MonoBehaviour {
 	}
 	*/
 	
-	public UnityEngine.AI.NavMeshPathStatus status
+	public NavMeshPathStatus status
 	{
 		get
 		{ 
 			if (path== null)
 			{
-			 return UnityEngine.AI.NavMeshPathStatus.PathInvalid;
+			 return NavMeshPathStatus.PathInvalid;
 			}	
 		return path.status;
 		}
 	}
 
-	public UnityEngine.AI.NavMeshPath path;
+	NavMeshPath _path;
+
+	public NavMeshPath path
+	{
+		set{
+			_path = value;
+			corners = _path.corners;
+		}
+		get{
+			return _path;
+		}
+	}
 	
 	// Use this for initialization
 	void Start () {

@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 
@@ -18,7 +18,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[RequiredField]
 		[Tooltip("Flag to attempt to acquire a new path if the existing path of a NavMesh Agent becomes invalid or if the agent reaches the end of a partial and stale path.")]
-		public FsmBool autoRepath;
+		public FsmBool isStopped;
 
 		private UnityEngine.AI.NavMeshAgent _agent;
 		
@@ -36,7 +36,7 @@ namespace HutongGames.PlayMaker.Actions
 		public override void Reset()
 		{
 			gameObject = null;
-			autoRepath = null;
+			isStopped = null;
 
 		}
 
@@ -51,12 +51,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoSetAutoRepath()
 		{
-			if (autoRepath == null || _agent == null) 
+			if (isStopped == null || _agent == null) 
 			{
 				return;
 			}
 			
-			_agent.autoRepath = autoRepath.Value;
+			_agent.autoRepath = isStopped.Value;
 		}
 
 	}

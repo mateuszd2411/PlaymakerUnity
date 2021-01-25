@@ -1,9 +1,13 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2017. All rights reserved.
 
 using UnityEngine;
+using System;
 
 namespace HutongGames.PlayMaker.Actions
 {
+
+	#pragma warning disable CS0618  
+	[Obsolete("Please use AgentIsStopped action")]
 	[ActionCategory(ActionCategory.NavMeshAgent)]
 	[Tooltip("Stop movement of the agent along the current path. \n" +
 		"NOTE: The Game Object must have a NavMeshAgent component attached.")]
@@ -13,9 +17,6 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
 		[CheckForComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 		public FsmOwnerDefault gameObject;
-		
-		[Tooltip("If true, the agent position and orientation is no longer controlled by the NavMeshAgent.")]
-		public FsmBool stopUpdates;
 		
 		private UnityEngine.AI.NavMeshAgent _agent;
 		
@@ -33,7 +34,6 @@ namespace HutongGames.PlayMaker.Actions
 		public override void Reset()
 		{
 			gameObject = null;
-			stopUpdates = null;
 		}
 
 		public override void OnEnter()
@@ -52,7 +52,7 @@ namespace HutongGames.PlayMaker.Actions
 				return;
 			}
 			
-			_agent.Stop(stopUpdates.Value);
+			_agent.Stop();
 		}
 
 	}

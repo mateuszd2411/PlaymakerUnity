@@ -1,9 +1,14 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2017. All rights reserved.
 
 using UnityEngine;
+using System;
+
 
 namespace HutongGames.PlayMaker.Actions
 {
+
+	#pragma warning disable CS0618  
+	[Obsolete("Please use AgentIsStopped action")]
 	[ActionCategory(ActionCategory.NavMeshAgent)]
 	[Tooltip("Resumes the movement along the current path of a navMesh Agent. \nNOTE: The Game Object must have a NavMeshAgent component attached.")]
 	public class AgentResume : FsmStateAction
@@ -46,7 +51,7 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				return;
 			}
-			
+
 			_agent.Resume();
 		}
 

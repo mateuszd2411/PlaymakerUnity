@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 
@@ -28,7 +28,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		// we could also design something that gives the velocity ranging from 0 to 1, 1 being the maximum speed of the agent, 
 		// which could give us good starting points for switching animation or know easily when an agent is at full speed.
-		
+
+		[Tooltip("Repeat every frame.")]
 		public bool everyFrame;
 		
 		private UnityEngine.AI.NavMeshAgent _agent;

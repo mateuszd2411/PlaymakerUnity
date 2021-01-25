@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2012. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 
 using UnityEngine;
 
@@ -7,7 +7,7 @@ namespace HutongGames.PlayMaker.Actions
 	[ActionCategory(ActionCategory.NavMeshAgent)]
 	[Tooltip("Gets the reference to the game object of current OffMeshLink of a NavMeshAgent. \n" +
 		"NOTE: The Game Object must have a NavMeshAgentcomponent attached.")]
-	public class AgentGetCurrentOffMeshLinkGameObject : FsmStateAction
+	public class GetAgentCurrentOffMeshLinkGameObject : FsmStateAction
 	{
 		[RequiredField]
 		[Tooltip("The Game Object to work with. NOTE: The Game Object must have a NavMeshAgent component attached.")]
