@@ -4683,7 +4683,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2fccf7a15baf47a4e867e9fa70bd7a2a, type: 2}
+  - {fileID: 2100000, guid: 24f08766a6648bf4990582353cd78fa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4739,7 +4739,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1d9e2d2ca5142fa49938e750d6deeb43, type: 2}
+  - {fileID: 2100000, guid: 385ce6df861e4ea44958ec77d8129058, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5053,7 +5053,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10a85b3551862e547be42bba67c8cfb1, type: 2}
+  - {fileID: 2100000, guid: 792a584c4dc3f4f458a10d59322a27f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8480,16 +8480,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010001
-        actionIsOpen: 0101010101
-        actionStartIndex: 00000000050000000e0000001000000014000000
-        actionHashCodes: 5b66cf00febdb4015ac8520409fbab04b2cf1000
+        - 
+        actionEnabled: 010101000101
+        actionIsOpen: 000000000001
+        actionStartIndex: 00000000050000000e000000100000001400000019000000
+        actionHashCodes: 5b66cf00febdb4015ac8520409fbab04b2cf10005ac85204
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -8668,6 +8670,138 @@ MonoBehaviour:
             vector4Values: []
             objectReferences: []
           setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 1246937266564502893}
+          TargetTypeName: UnityEngine.AI.NavMeshAgent
+          PropertyName: enabled
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Boolean
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          EnumParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            enumName: 
+            intValue: 0
+          ArrayParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+          setProperty: 1
         layoutOptionParams: []
         fsmStringParams:
         - useVariable: 0
@@ -8749,12 +8883,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0001000000000000000000000000
+        byteData: 000100000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000001300000001000000140000001c0000001c0000000f0000000f0000000f0000000700000007000000010000002400000001000000140000001200000011000000010000001400000011000000110000000100000001000000
+        paramDataType: 1400000012000000120000001300000001000000140000001c0000001c0000000f0000000f0000000f00000007000000070000000100000024000000010000001400000012000000110000000100000014000000110000001100000001000000010000002400000001000000
         paramName:
         - gameObject
         - fsmName
@@ -8781,8 +8915,10 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000000000000010000000000000001000000000000000100000002000000010000000500000009000000000000000a0000000200000002000000000000000b0000000300000001000000020000000c0000000d000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000004000000010000000000000001000000000000000000000000000000010000000000000000000000000000000100000001000000
+        - targetProperty
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000000000000010000000000000001000000000000000100000002000000010000000500000009000000000000000a0000000200000002000000000000000b0000000300000001000000020000000c0000000d000000010000000e000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000000000000000000004000000040000000100000000000000010000000000000000000000000000000100000000000000000000000000000001000000010000000000000001000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -9288,7 +9424,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.4
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
