@@ -8127,6 +8127,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Radius: 0.13283494
   m_Height: 0.41897833
   m_Direction: 0
@@ -8137,6 +8138,12 @@ CapsuleCollider:
   m_Direction: 0
   m_Center: {x: -0.11828696, y: 0.0000000057831873, z: -0.00000011742541}
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_Radius: 0.06307884
+  m_Height: 0.37309834
+  m_Direction: 0
+  m_Center: {x: -0.11828696, y: 0.0000000057831873, z: -0.00000011742541}
+>>>>>>> parent of bda3dc72 (Changed box colider for zombie)
 --- !u!1 &1246937266564502732
 GameObject:
   m_ObjectHideFlags: 0
@@ -8915,6 +8922,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Radius: 0.21851638
   m_Height: 0.94
   m_Direction: 0
@@ -8925,6 +8933,12 @@ CapsuleCollider:
   m_Direction: 0
   m_Center: {x: -0.028050587, y: 0, z: 0}
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_Radius: 0.011220234
+  m_Height: 0.056101173
+  m_Direction: 0
+  m_Center: {x: -0.028050587, y: 0, z: 0}
+>>>>>>> parent of bda3dc72 (Changed box colider for zombie)
 --- !u!1 &1246937266564502794
 GameObject:
   m_ObjectHideFlags: 0
@@ -9013,6 +9027,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Radius: 0.180033
   m_Height: 0.36006597
   m_Direction: 1
@@ -9023,6 +9038,12 @@ CapsuleCollider:
   m_Direction: 1
   m_Center: {x: 0, y: 0.11679546, z: 0}
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_Radius: 0.05839773
+  m_Height: 0.23359092
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.11679546, z: 0}
+>>>>>>> parent of bda3dc72 (Changed box colider for zombie)
 --- !u!1 &1246937266564502798
 GameObject:
   m_ObjectHideFlags: 0
@@ -9578,6 +9599,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Radius: 0.1051577
   m_Height: 0.29337102
   m_Direction: 1
@@ -9588,6 +9610,12 @@ CapsuleCollider:
   m_Direction: 1
   m_Center: {x: 0, y: 0.11679371, z: 0}
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_Radius: 0.058396854
+  m_Height: 0.23358741
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.11679371, z: 0}
+>>>>>>> parent of bda3dc72 (Changed box colider for zombie)
 --- !u!54 &1246937266564502848
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12364,12 +12392,17 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Radius: 0.39588177
   m_Center: {x: -0.0000000026479778, y: 0.14588758, z: -0.038341764}
 =======
   m_Radius: 0.24
   m_Center: {x: 0, y: 0.09604632, z: 0}
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_Radius: 0.24
+  m_Center: {x: 0, y: 0.09604632, z: 0}
+>>>>>>> parent of bda3dc72 (Changed box colider for zombie)
 --- !u!1 &2279056145233040257
 GameObject:
   m_ObjectHideFlags: 0
