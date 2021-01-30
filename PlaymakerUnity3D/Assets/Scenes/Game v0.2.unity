@@ -2779,8 +2779,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637196600}
   m_Mesh: {fileID: 4300000, guid: bfc0a761743ea524da212d3db3afd4cb, type: 3}
+<<<<<<< HEAD:PlaymakerUnity3D/Assets/Scenes/Game v0.2.unity
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 71b6f8d3 (Did prefabs):PlaymakerUnity3D/Assets/__PREFABS Zombie shutteer with Claude PLayer/Game v0.2.unity
 --- !u!1 &1773123565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2876,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:PlaymakerUnity3D/Assets/Scenes/Game v0.2.unity
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+>>>>>>> parent of 71b6f8d3 (Did prefabs):PlaymakerUnity3D/Assets/__PREFABS Zombie shutteer with Claude PLayer/Game v0.2.unity
 --- !u!1 &1784617256
 GameObject:
   m_ObjectHideFlags: 0
@@ -7537,11 +7543,15 @@ Transform:
   - {fileID: 1246937266564204888}
   - {fileID: 1393784819}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:PlaymakerUnity3D/Assets/Scenes/Game v0.2.unity
 <<<<<<< HEAD
   m_RootOrder: 6
 =======
   m_RootOrder: 8
 >>>>>>> parent of 71b6f8d3 (Did prefabs)
+=======
+  m_RootOrder: 8
+>>>>>>> parent of 71b6f8d3 (Did prefabs):PlaymakerUnity3D/Assets/__PREFABS Zombie shutteer with Claude PLayer/Game v0.2.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1246937266564204872
 Transform:
