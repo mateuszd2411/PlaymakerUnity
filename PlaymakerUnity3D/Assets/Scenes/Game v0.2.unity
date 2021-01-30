@@ -529,6 +529,62 @@ Transform:
   m_Father: {fileID: 1844199876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &371690135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371690137}
+  - component: {fileID: 371690136}
+  m_Layer: 0
+  m_Name: PlayMakerGUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &371690136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371690135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewOnGUI: 1
+  enableGUILayout: 1
+  drawStateLabels: 1
+  enableStateLabelsInBuilds: 0
+  GUITextureStateLabels: 0
+  GUITextStateLabels: 0
+  filterLabelsWithDistance: 0
+  maxLabelDistance: 10
+  controlMouseCursor: 1
+  labelScale: 1
+--- !u!4 &371690137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371690135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!23 &436838011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -766,7 +822,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &497783465
 GameObject:
@@ -1468,6 +1528,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1 &956715911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,6 +1582,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &1124168668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,6 +2779,101 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637196600}
   m_Mesh: {fileID: 4300000, guid: bfc0a761743ea524da212d3db3afd4cb, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1 &1773123565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1773123569}
+  - component: {fileID: 1773123568}
+  - component: {fileID: 1773123567}
+  - component: {fileID: 1773123566}
+  m_Layer: 0
+  m_Name: Capsule
+  m_TagString: Enemmy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &1773123566
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773123565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1773123567
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773123565}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1773123568
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773123565}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1773123569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773123565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.4, y: 1.5, z: -4.07}
+  m_LocalScale: {x: 0.70653, y: 0.70653, z: 0.70653}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &1784617256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,7 +3411,11 @@ RectTransform:
   - {fileID: 645947027}
   - {fileID: 176877082}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7375,7 +7537,11 @@ Transform:
   - {fileID: 1246937266564204888}
   - {fileID: 1393784819}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 8
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1246937266564204872
 Transform:
@@ -7960,10 +8126,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.13283494
   m_Height: 0.41897833
   m_Direction: 0
   m_Center: {x: -0.14122698, y: -0.000000010515918, z: 0.024242055}
+=======
+  m_Radius: 0.06307884
+  m_Height: 0.37309834
+  m_Direction: 0
+  m_Center: {x: -0.11828696, y: 0.0000000057831873, z: -0.00000011742541}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &1246937266564502732
 GameObject:
   m_ObjectHideFlags: 0
@@ -8741,10 +8914,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.21851638
   m_Height: 0.94
   m_Direction: 0
   m_Center: {x: -0.08103037, y: 0.0000000408899, z: -0.20729606}
+=======
+  m_Radius: 0.011220234
+  m_Height: 0.056101173
+  m_Direction: 0
+  m_Center: {x: -0.028050587, y: 0, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &1246937266564502794
 GameObject:
   m_ObjectHideFlags: 0
@@ -8832,10 +9012,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.180033
   m_Height: 0.36006597
   m_Direction: 1
   m_Center: {x: 0.058420714, y: 0.13390176, z: -0.06321511}
+=======
+  m_Radius: 0.05839773
+  m_Height: 0.23359092
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.11679546, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &1246937266564502798
 GameObject:
   m_ObjectHideFlags: 0
@@ -9390,10 +9577,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.1051577
   m_Height: 0.29337102
   m_Direction: 1
   m_Center: {x: -0.0000000072093145, y: 0.08690202, z: 0.004357829}
+=======
+  m_Radius: 0.058396854
+  m_Height: 0.23358741
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.11679371, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!54 &1246937266564502848
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9557,7 +9751,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!136 &1246937266564502887
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12165,8 +12363,13 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Radius: 0.39588177
   m_Center: {x: -0.0000000026479778, y: 0.14588758, z: -0.038341764}
+=======
+  m_Radius: 0.24
+  m_Center: {x: 0, y: 0.09604632, z: 0}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
 --- !u!1 &2279056145233040257
 GameObject:
   m_ObjectHideFlags: 0
@@ -23073,7 +23276,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7555543610900790842}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+<<<<<<< HEAD
   m_LocalPosition: {x: 13.93, y: 0.516, z: 1.66}
+=======
+  m_LocalPosition: {x: 13.93, y: 0.516, z: -2.106}
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
   m_LocalScale: {x: 95, y: 95, z: 95}
   m_Children:
   - {fileID: 7555543610900423196}
@@ -25501,7 +25708,11 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+<<<<<<< HEAD
           value: 30
+=======
+          value: 60
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         - useVariable: 1
           name: Total Ammo
           tooltip: 
@@ -26220,9 +26431,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.GameObjectCompareTag
         - HutongGames.PlayMaker.Actions.GameObjectCompareTag
+<<<<<<< HEAD
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+=======
+        - HutongGames.PlayMaker.Actions.SetAnimatorBool
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.FloatAdd
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
@@ -26233,8 +26450,13 @@ MonoBehaviour:
         - 
         actionEnabled: 010101010101
         actionIsOpen: 010101010101
+<<<<<<< HEAD
         actionStartIndex: 00000000060000000c000000100000001400000019000000
         actionHashCodes: 7b3126027b3126022a6e8a0009fbab04b2cf100088611604
+=======
+        actionStartIndex: 00000000060000000c000000100000001500000019000000
+        actionHashCodes: 7b3126027b31260209fbab04b2cf10002a6e8a0088611604
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -26356,7 +26578,11 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
+<<<<<<< HEAD
         paramDataType: 1300000012000000170000001700000011000000010000001300000012000000170000001700000011000000010000000f0000000f000000010000000100000014000000120000001100000001000000140000001100000011000000010000000100000017000000
+=======
+        paramDataType: 1300000012000000170000001700000011000000010000001300000012000000170000001700000011000000010000001400000012000000110000000100000014000000110000001100000001000000010000000f0000000f000000010000000100000017000000
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         paramName:
         - gameObject
         - tag
@@ -26370,10 +26596,13 @@ MonoBehaviour:
         - falseEvent
         - storeResult
         - everyFrame
+<<<<<<< HEAD
         - floatVariable
         - add
         - everyFrame
         - perSecond
+=======
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         - gameObject
         - parameter
         - Value
@@ -26383,9 +26612,19 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
+<<<<<<< HEAD
         - sendEvent
         paramDataPos: 0000000000000000000000000100000000000000000000000100000001000000020000000300000001000000010000000000000001000000020000000300000000000000020000000200000004000000010000000300000004000000050000000600000004000000
         paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000010000000100000000000000000000000000000001000000000000000000000000000000010000000100000000000000
+=======
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - sendEvent
+        paramDataPos: 0000000000000000000000000100000000000000000000000100000001000000020000000300000001000000010000000000000002000000020000000200000001000000030000000400000003000000040000000000000001000000050000000600000004000000
+        paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000010000000100000000000000
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
     - name: State 5
       description: 
       colorIndex: 0
@@ -26420,7 +26659,11 @@ MonoBehaviour:
         - 
         - 
         - 
+<<<<<<< HEAD
         actionEnabled: 0101010101
+=======
+        actionEnabled: 0101010001
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         actionIsOpen: 0101010101
         actionStartIndex: 0000000002000000060000000b0000000f000000
         actionHashCodes: d97b72025e69bb04b2cf10002a6e8a0088611604
@@ -26563,8 +26806,13 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 523
         y: 227
+=======
+        x: 526
+        y: 228
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         width: 100
         height: 32
       isBreakpoint: 0
@@ -26592,7 +26840,11 @@ MonoBehaviour:
         - 
         - 
         - 
+<<<<<<< HEAD
         actionEnabled: 0101010101
+=======
+        actionEnabled: 0101010001
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         actionIsOpen: 0101010101
         actionStartIndex: 0000000002000000060000000b0000000f000000
         actionHashCodes: d97b72025e69bb04b2cf10002a6e8a0088611604
@@ -27880,7 +28132,11 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 62
+=======
+        x: 50
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         y: 100
         width: 100
         height: 32
@@ -27933,7 +28189,11 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+<<<<<<< HEAD
           value: 50
+=======
+          value: 5
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         - useVariable: 0
           name: 
           tooltip: 
@@ -27969,7 +28229,11 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 245
+=======
+        x: 229
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         y: 110
         width: 100
         height: 32
@@ -28059,7 +28323,11 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 435
+=======
+        x: 419
+>>>>>>> parent of 71b6f8d3 (Did prefabs)
         y: 123
         width: 100
         height: 16
