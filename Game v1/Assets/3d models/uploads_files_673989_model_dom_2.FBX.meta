@@ -1,0 +1,469 @@
+fileFormatVersion: 2
+guid: 3e01a7d1a6159344ab3f7223a2b86aa9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 0      002
+    100002: 1      002
+    100004: 11     001
+    100006: 12     002
+    100008: 13     001
+    100010: 14     002
+    100012: 15     001
+    100014: 16     002
+    100016: 17     001
+    100018: 18     002
+    100020: 19     011
+    100022: 2      001
+    100024: 20     001
+    100026: 21     011
+    100028: 22     001
+    100030: 23     001
+    100032: 24     001
+    100034: 25     001
+    100036: 26     001
+    100038: 27     001
+    100040: 28     001
+    100042: 29     011
+    100044: 3      001
+    100046: 3      002
+    100048: 3      013
+    100050: 3      014
+    100052: 3      015
+    100054: 3      016
+    100056: 30     011
+    100058: 31     011
+    100060: 32     011
+    100062: 4      003
+    100064: 4      004
+    100066: 4      013
+    100068: 4      014
+    100070: 4      015
+    100072: 4      016
+    100074: 5      002
+    100076: 5      003
+    100078: 5      013
+    100080: 5      014
+    100082: 5      015
+    100084: 5      016
+    100086: 6      003
+    100088: 6      004
+    100090: 6      013
+    100092: 6      014
+    100094: 6      015
+    100096: 6      016
+    100098: 7      003
+    100100: 8      003
+    100102: curtain_005
+    100104: curtain_016
+    100106: curtain_017
+    100108: curtain_018
+    100110: curtain_019
+    100112: curtain_020
+    100114: curtain_021
+    100116: curtain_022
+    100118: curtain_023
+    100120: curtain_028
+    100122: curtain_029
+    100124: curtain_030
+    100126: curtain_031
+    100128: curtain_032
+    100130: Group457
+    100132: Group458
+    100134: Object059
+    100136: Object060
+    100138: Object061
+    100140: Object062
+    100142: Object063
+    100144: //RootNode
+    100146: VRayPhysicalCamera001
+    100148: VRayPhysicalCamera001.Target
+    100150: VRaySun001
+    100152: VRaySun001.Target
+    400000: 0      002
+    400002: 1      002
+    400004: 11     001
+    400006: 12     002
+    400008: 13     001
+    400010: 14     002
+    400012: 15     001
+    400014: 16     002
+    400016: 17     001
+    400018: 18     002
+    400020: 19     011
+    400022: 2      001
+    400024: 20     001
+    400026: 21     011
+    400028: 22     001
+    400030: 23     001
+    400032: 24     001
+    400034: 25     001
+    400036: 26     001
+    400038: 27     001
+    400040: 28     001
+    400042: 29     011
+    400044: 3      001
+    400046: 3      002
+    400048: 3      013
+    400050: 3      014
+    400052: 3      015
+    400054: 3      016
+    400056: 30     011
+    400058: 31     011
+    400060: 32     011
+    400062: 4      003
+    400064: 4      004
+    400066: 4      013
+    400068: 4      014
+    400070: 4      015
+    400072: 4      016
+    400074: 5      002
+    400076: 5      003
+    400078: 5      013
+    400080: 5      014
+    400082: 5      015
+    400084: 5      016
+    400086: 6      003
+    400088: 6      004
+    400090: 6      013
+    400092: 6      014
+    400094: 6      015
+    400096: 6      016
+    400098: 7      003
+    400100: 8      003
+    400102: curtain_005
+    400104: curtain_016
+    400106: curtain_017
+    400108: curtain_018
+    400110: curtain_019
+    400112: curtain_020
+    400114: curtain_021
+    400116: curtain_022
+    400118: curtain_023
+    400120: curtain_028
+    400122: curtain_029
+    400124: curtain_030
+    400126: curtain_031
+    400128: curtain_032
+    400130: Group457
+    400132: Group458
+    400134: Object059
+    400136: Object060
+    400138: Object061
+    400140: Object062
+    400142: Object063
+    400144: //RootNode
+    400146: VRayPhysicalCamera001
+    400148: VRayPhysicalCamera001.Target
+    400150: VRaySun001
+    400152: VRaySun001.Target
+    2100000: paving
+    2100002: ground
+    2100004: ground_2
+    2100006: curtains
+    2100008: roof
+    2100010: roof_2
+    2100012: wall_light
+    2100014: wood
+    2100016: glass
+    2100018: stone
+    2100020: wall_dark
+    2100022: dark sreel
+    2300000: 0      002
+    2300002: 1      002
+    2300004: 11     001
+    2300006: 12     002
+    2300008: 13     001
+    2300010: 14     002
+    2300012: 15     001
+    2300014: 16     002
+    2300016: 17     001
+    2300018: 18     002
+    2300020: 19     011
+    2300022: 2      001
+    2300024: 20     001
+    2300026: 21     011
+    2300028: 22     001
+    2300030: 23     001
+    2300032: 24     001
+    2300034: 25     001
+    2300036: 26     001
+    2300038: 27     001
+    2300040: 28     001
+    2300042: 29     011
+    2300044: 3      001
+    2300046: 3      002
+    2300048: 3      013
+    2300050: 3      014
+    2300052: 3      015
+    2300054: 3      016
+    2300056: 30     011
+    2300058: 31     011
+    2300060: 32     011
+    2300062: 4      003
+    2300064: 4      004
+    2300066: 4      013
+    2300068: 4      014
+    2300070: 4      015
+    2300072: 4      016
+    2300074: 5      002
+    2300076: 5      003
+    2300078: 5      013
+    2300080: 5      014
+    2300082: 5      015
+    2300084: 5      016
+    2300086: 6      003
+    2300088: 6      004
+    2300090: 6      013
+    2300092: 6      014
+    2300094: 6      015
+    2300096: 6      016
+    2300098: 7      003
+    2300100: 8      003
+    2300102: curtain_005
+    2300104: curtain_016
+    2300106: curtain_017
+    2300108: curtain_018
+    2300110: curtain_019
+    2300112: curtain_020
+    2300114: curtain_021
+    2300116: curtain_022
+    2300118: curtain_023
+    2300120: curtain_028
+    2300122: curtain_029
+    2300124: curtain_030
+    2300126: curtain_031
+    2300128: curtain_032
+    2300130: Object059
+    2300132: Object060
+    2300134: Object061
+    2300136: Object062
+    2300138: Object063
+    3300000: 0      002
+    3300002: 1      002
+    3300004: 11     001
+    3300006: 12     002
+    3300008: 13     001
+    3300010: 14     002
+    3300012: 15     001
+    3300014: 16     002
+    3300016: 17     001
+    3300018: 18     002
+    3300020: 19     011
+    3300022: 2      001
+    3300024: 20     001
+    3300026: 21     011
+    3300028: 22     001
+    3300030: 23     001
+    3300032: 24     001
+    3300034: 25     001
+    3300036: 26     001
+    3300038: 27     001
+    3300040: 28     001
+    3300042: 29     011
+    3300044: 3      001
+    3300046: 3      002
+    3300048: 3      013
+    3300050: 3      014
+    3300052: 3      015
+    3300054: 3      016
+    3300056: 30     011
+    3300058: 31     011
+    3300060: 32     011
+    3300062: 4      003
+    3300064: 4      004
+    3300066: 4      013
+    3300068: 4      014
+    3300070: 4      015
+    3300072: 4      016
+    3300074: 5      002
+    3300076: 5      003
+    3300078: 5      013
+    3300080: 5      014
+    3300082: 5      015
+    3300084: 5      016
+    3300086: 6      003
+    3300088: 6      004
+    3300090: 6      013
+    3300092: 6      014
+    3300094: 6      015
+    3300096: 6      016
+    3300098: 7      003
+    3300100: 8      003
+    3300102: curtain_005
+    3300104: curtain_016
+    3300106: curtain_017
+    3300108: curtain_018
+    3300110: curtain_019
+    3300112: curtain_020
+    3300114: curtain_021
+    3300116: curtain_022
+    3300118: curtain_023
+    3300120: curtain_028
+    3300122: curtain_029
+    3300124: curtain_030
+    3300126: curtain_031
+    3300128: curtain_032
+    3300130: Object059
+    3300132: Object060
+    3300134: Object061
+    3300136: Object062
+    3300138: Object063
+    4300000: 20     001
+    4300002: 31     011
+    4300004: 32     011
+    4300006: Object059
+    4300008: curtain_005
+    4300010: curtain_016
+    4300012: curtain_017
+    4300014: curtain_020
+    4300016: curtain_021
+    4300018: curtain_022
+    4300020: curtain_023
+    4300022: curtain_028
+    4300024: curtain_029
+    4300026: curtain_030
+    4300028: curtain_031
+    4300030: curtain_032
+    4300032: curtain_018
+    4300034: curtain_019
+    4300036: 8      003
+    4300038: 0      002
+    4300040: 1      002
+    4300042: 2      001
+    4300044: 3      001
+    4300046: 4      003
+    4300048: 5      002
+    4300050: 6      003
+    4300052: 7      003
+    4300054: 11     001
+    4300056: 12     002
+    4300058: 13     001
+    4300060: 14     002
+    4300062: 15     001
+    4300064: 16     002
+    4300066: 17     001
+    4300068: 18     002
+    4300070: 19     011
+    4300072: 21     011
+    4300074: 22     001
+    4300076: 23     001
+    4300078: 24     001
+    4300080: 25     001
+    4300082: 26     001
+    4300084: 27     001
+    4300086: 28     001
+    4300088: 29     011
+    4300090: 30     011
+    4300092: Object060
+    4300094: Object061
+    4300096: 6      004
+    4300098: 6      014
+    4300100: 6      013
+    4300102: 6      016
+    4300104: 6      015
+    4300106: 4      016
+    4300108: 5      015
+    4300110: 4      015
+    4300112: 5      016
+    4300114: 4      004
+    4300116: 5      014
+    4300118: 4      014
+    4300120: 5      013
+    4300122: 4      013
+    4300124: 5      003
+    4300126: 3      002
+    4300128: 3      013
+    4300130: 3      014
+    4300132: 3      016
+    4300134: 3      015
+    4300136: Object062
+    4300138: Object063
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
