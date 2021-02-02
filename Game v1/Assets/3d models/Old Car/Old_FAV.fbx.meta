@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: f7a416b54c826ac40ba7f8add8df9074
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Axle
+    100002: BarrelD
+    100004: ControlD
+    100006: ControlP
+    100008: csD
+    100010: csMtD
+    100012: csMtP
+    100014: csP
+    100016: DiskBrkD
+    100018: DiskBrkP
+    100020: DriveFD
+    100022: DriveFP
+    100024: DriveRD
+    100026: DriveRP
+    100028: fav_316958
+    100030: fav_316958.Shape
+    100032: Gun
+    100034: GunBase
+    100036: GunPiv
+    100038: LowerBD
+    100040: LowerBP
+    100042: LowerD
+    100044: LowerP
+    100046: //RootNode
+    100048: Piston1RD
+    100050: Piston1RP
+    100052: Piston2RD
+    100054: Piston2RP
+    100056: PistonFD
+    100058: PistonFP
+    100060: Shock1RD
+    100062: Shock1RP
+    100064: Shock2RD
+    100066: Shock2RP
+    100068: ShockFD
+    100070: ShockFP
+    100072: StearingWheel
+    100074: SwivD
+    100076: SwivP
+    100078: Truck
+    100080: UpperBD
+    100082: UpperBP
+    100084: UpperD
+    100086: UpperP
+    400000: Axle
+    400002: BarrelD
+    400004: ControlD
+    400006: ControlP
+    400008: csD
+    400010: csMtD
+    400012: csMtP
+    400014: csP
+    400016: DiskBrkD
+    400018: DiskBrkP
+    400020: DriveFD
+    400022: DriveFP
+    400024: DriveRD
+    400026: DriveRP
+    400028: fav_316958
+    400030: fav_316958.Shape
+    400032: Gun
+    400034: GunBase
+    400036: GunPiv
+    400038: LowerBD
+    400040: LowerBP
+    400042: LowerD
+    400044: LowerP
+    400046: //RootNode
+    400048: Piston1RD
+    400050: Piston1RP
+    400052: Piston2RD
+    400054: Piston2RP
+    400056: PistonFD
+    400058: PistonFP
+    400060: Shock1RD
+    400062: Shock1RP
+    400064: Shock2RD
+    400066: Shock2RP
+    400068: ShockFD
+    400070: ShockFP
+    400072: StearingWheel
+    400074: SwivD
+    400076: SwivP
+    400078: Truck
+    400080: UpperBD
+    400082: UpperBP
+    400084: UpperD
+    400086: UpperP
+    2100000: RUBBER
+    2100002: Trans
+    2100004: Chrome
+    2100006: Metal
+    2100008: Eng
+    2100010: Pipes
+    2100012: MetalU
+    2100014: Plastic
+    2100016: MetalA
+    2100018: MetalB
+    2100020: Nuts
+    2100022: Void
+    2100024: cloth
+    2100026: Breaks
+    2100028: Hub
+    2100030: NutsLug
+    2100032: Rims
+    2100034: Spring
+    2100036: Shock
+    2100038: ShockC
+    2100040: Rope
+    2100042: Mirror
+    2100044: lightSig
+    2100046: LED
+    4300000: fav_316958.Shape
+    9500000: //RootNode
+    13700000: fav_316958.Shape
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
