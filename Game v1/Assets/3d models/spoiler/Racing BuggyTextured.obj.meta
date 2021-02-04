@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: fe4d6bbd9635c3f4bbd7de75ed950497
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Racingnet_CarPaint3UVMesh_U123N__
+    100004: Spoiler_Deform3UVMesh_U123NM__
+    100006: v013_armoredtransport_body_CarPaint3UVMesh_U123N__
+    100008: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__
+    100010: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__
+    100012: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__
+    100014: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__
+    100016: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__
+    100018: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__
+    100020: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__
+    100022: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__
+    100024: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__
+    100026: v046_car_racingbuggy_window_WindowMesh_U_201N__
+    100028: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__
+    400000: //RootNode
+    400002: Racingnet_CarPaint3UVMesh_U123N__
+    400004: Spoiler_Deform3UVMesh_U123NM__
+    400006: v013_armoredtransport_body_CarPaint3UVMesh_U123N__
+    400008: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__
+    400010: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__
+    400012: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__
+    400014: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__
+    400016: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__
+    400018: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__
+    400020: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__
+    400022: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__
+    400024: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__
+    400026: v046_car_racingbuggy_window_WindowMesh_U_201N__
+    400028: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__
+    2100000: Racingnet_CarPaint3UVMesh_U123N__Mat
+    2100002: Spoiler_Deform3UVMesh_U123NM__Mat
+    2100004: v013_armoredtransport_body_CarPaint3UVMesh_U123N__Mat
+    2100006: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__Mat
+    2100008: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__Mat
+    2100010: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__Mat
+    2100012: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__Mat
+    2100014: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__Mat
+    2100016: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__Mat
+    2100018: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__Mat
+    2100020: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__Mat
+    2100022: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__Mat
+    2100024: v046_car_racingbuggy_window_WindowMesh_U_201N__Mat
+    2100026: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__Mat
+    2300000: Racingnet_CarPaint3UVMesh_U123N__
+    2300002: Spoiler_Deform3UVMesh_U123NM__
+    2300004: v013_armoredtransport_body_CarPaint3UVMesh_U123N__
+    2300006: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__
+    2300008: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__
+    2300010: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__
+    2300012: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__
+    2300014: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__
+    2300016: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__
+    2300018: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__
+    2300020: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__
+    2300022: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__
+    2300024: v046_car_racingbuggy_window_WindowMesh_U_201N__
+    2300026: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__
+    3300000: Racingnet_CarPaint3UVMesh_U123N__
+    3300002: Spoiler_Deform3UVMesh_U123NM__
+    3300004: v013_armoredtransport_body_CarPaint3UVMesh_U123N__
+    3300006: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__
+    3300008: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__
+    3300010: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__
+    3300012: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__
+    3300014: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__
+    3300016: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__
+    3300018: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__
+    3300020: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__
+    3300022: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__
+    3300024: v046_car_racingbuggy_window_WindowMesh_U_201N__
+    3300026: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__
+    4300000: Racingnet_CarPaint3UVMesh_U123N__
+    4300002: Spoiler_Deform3UVMesh_U123NM__
+    4300004: v013_armoredtransport_body_CarPaint3UVMesh_U123N__
+    4300006: V013_Armoredtransport_Glass_Lights_WindowMesh_U_201N__
+    4300008: v013_armoredtransport_lights_CarPaint2UVMesh_U12N__
+    4300010: v046_car_racingbuggy_body_CarPaint3UVMesh_U123N__
+    4300012: v046_car_racingbuggy_body_Deform3UVMesh_U123NM__
+    4300014: v046_car_racingbuggy_glass_lights_WindowMesh_U_201N__
+    4300016: v046_car_racingbuggy_interior_CarPaint3UVMesh_U123N__
+    4300018: v046_car_racingbuggy_interior_Deform3UVMesh_U123NM__
+    4300020: v046_car_racingbuggy_lights_CarPaint2UVMesh_U12N__
+    4300022: v046_car_racingbuggy_wheel_CarPaint3UVMesh_U123N__
+    4300024: v046_car_racingbuggy_window_WindowMesh_U_201N__
+    4300026: Wpn_210_Stationary_50Cal_Body_Wire2UVMesh_U_2012N__
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
