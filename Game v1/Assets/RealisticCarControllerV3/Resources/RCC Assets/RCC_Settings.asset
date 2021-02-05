@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,13 +13,13 @@ MonoBehaviour:
   m_Name: RCC_Settings
   m_EditorClassIdentifier: 
   RCCVersion: 3.2b
-  toolbarSelectedIndex: 0
+  toolbarSelectedIndex: 1
   overrideFixedTimeStep: 1
   fixedTimeStep: 0.02
   maxAngularVelocity: 8
   behaviorType: 5
   useFixedWheelColliders: 1
-  controllerType: 0
+  controllerType: 1
   verticalInput: Vertical
   horizontalInput: Horizontal
   handbrakeKB: 32
@@ -41,7 +42,7 @@ MonoBehaviour:
   runEngineAtAwake: 1
   autoReverse: 1
   autoReset: 1
-  contactParticles: {fileID: 193332, guid: 863b5201aede3aa438ac7d962625d663, type: 2}
+  contactParticles: {fileID: 193332, guid: 863b5201aede3aa438ac7d962625d663, type: 3}
   units: 0
   uiType: 0
   useTelemetry: 0
@@ -55,23 +56,23 @@ MonoBehaviour:
   RCCLayer: RCC
   RCCTag: Player
   tagAllChildrenGameobjects: 0
-  chassisJoint: {fileID: 116354, guid: a7e7b1406cded0e4cb52224eb5dc2d80, type: 2}
-  exhaustGas: {fileID: 104134, guid: b6fecef6c92b67147b638a07ef91195b, type: 2}
-  skidmarksManager: {fileID: 11447598, guid: a107dc7aa77e84f4d8cf9888def4fe64, type: 2}
-  projector: {fileID: 102982, guid: 7f7b6e33e52b82e43a57b7cc85ed5cf9, type: 2}
+  chassisJoint: {fileID: 116354, guid: a7e7b1406cded0e4cb52224eb5dc2d80, type: 3}
+  exhaustGas: {fileID: 104134, guid: b6fecef6c92b67147b638a07ef91195b, type: 3}
+  skidmarksManager: {fileID: 11447598, guid: a107dc7aa77e84f4d8cf9888def4fe64, type: 3}
+  projector: {fileID: 102982, guid: 7f7b6e33e52b82e43a57b7cc85ed5cf9, type: 3}
   projectorIgnoreLayer:
     serializedVersion: 2
     m_Bits: 0
-  headLights: {fileID: 146832, guid: 660ec4b1fd79fa74096f0ab9e6cbd2ca, type: 2}
-  brakeLights: {fileID: 136378, guid: 40648ef4ebef26d4c9cc0663c2f08e5e, type: 2}
-  reverseLights: {fileID: 197258, guid: 188c477ab444228409c4a246c02a86bd, type: 2}
-  indicatorLights: {fileID: 166118, guid: 580925c070bc6064c90563e08cb421f0, type: 2}
-  mirrors: {fileID: 132014, guid: 42ab1ab32651fc74dad3e9cedf0b5270, type: 2}
-  RCCMainCamera: {fileID: 11400656, guid: 9f32ea4a11500b344ae05427bdc21e05, type: 2}
-  hoodCamera: {fileID: 171864, guid: a28e2d33ee4eec642be5568debd291ab, type: 2}
+  headLights: {fileID: 146832, guid: 660ec4b1fd79fa74096f0ab9e6cbd2ca, type: 3}
+  brakeLights: {fileID: 136378, guid: 40648ef4ebef26d4c9cc0663c2f08e5e, type: 3}
+  reverseLights: {fileID: 197258, guid: 188c477ab444228409c4a246c02a86bd, type: 3}
+  indicatorLights: {fileID: 166118, guid: 580925c070bc6064c90563e08cb421f0, type: 3}
+  mirrors: {fileID: 132014, guid: 42ab1ab32651fc74dad3e9cedf0b5270, type: 3}
+  RCCMainCamera: {fileID: 11400656, guid: 9f32ea4a11500b344ae05427bdc21e05, type: 3}
+  hoodCamera: {fileID: 171864, guid: a28e2d33ee4eec642be5568debd291ab, type: 3}
   cinematicCamera: {fileID: 1000014008404042, guid: 330409232e97fd84c9b2e696d6de0bd5,
-    type: 2}
-  RCCCanvas: {fileID: 102148, guid: 3c49455ff7757444fa4b466c3250f423, type: 2}
+    type: 3}
+  RCCCanvas: {fileID: 102148, guid: 3c49455ff7757444fa4b466c3250f423, type: 3}
   dontUseAnyParticleEffects: 0
   dontUseChassisJoint: 0
   dontUseSkidmarks: 0
