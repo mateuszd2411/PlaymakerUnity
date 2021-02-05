@@ -4,10 +4,13 @@ labels:
 - Not
 - Fully
 - Implemented
+timeCreated: 1508211336
+licenseType: Store
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
-  executionOrder: -1001
+  executionOrder: -1100
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
+  assetBundleVariant: 
